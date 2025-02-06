@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 910310e3a9e22634984ee94e25c4b594
+timeCreated: 1476042635
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 73603
+  packageName: Camera Aspect Ratio Rectifier
+  packageVersion: 1.0
+  assetPath: Assets/Camera Aspect Ratio Rectifier/Example/ExampleScene.unity
+  uploadId: 146799
