@@ -1,18 +1,39 @@
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.UI; // Para el texto UI estándar
+using TMPro;         // Para TextMeshPro
 
-public class FontControl : MonoBehaviour
+public class FontController : MonoBehaviour
 {
-    public Font newFont; // Arrastra la fuente aquí desde el inspector
-    public Text textToChange;
+    // Array para textos estándar
+    public Text[] uiTextsToChange;
 
-    void Start()
+    // Array para textos TextMeshPro
+    public TMP_Text[] tmpTextsToChange;
+
+    // Nueva fuente para aplicar
+    public Font newFont;
+
+    // Método para cambiar la fuente
+    public void ChangeFont()
     {
-        if (newFont != null && textToChange != null)
+        // Cambiar la fuente de textos estándar
+        foreach (Text uiText in uiTextsToChange)
         {
-            textToChange.font = newFont;
-            textToChange.fontSize = 24; // Cambiar tamaño
-            textToChange.color = Color.red; // Cambiar color
+            if (uiText != null)
+            {
+                uiText.font = newFont;
+            }
         }
+
+        // Cambiar la fuente de textos TextMeshPro
+        foreach (TMP_Text tmpText in tmpTextsToChange)
+        {
+            if (tmpText != null)
+            {
+                tmpText.font = TMP_FontAsset.CreateFontAsset(newFont); // Convierte la fuente para TextMeshPro
+            }
+        }
+
+        Debug.Log("Fuente cambiada en todos los textos.");
     }
 }
