@@ -197,8 +197,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278600388
-  m_fontColor: {r: 0.76729554, g: 0.26028705, b: 0.02171578, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -493,6 +493,8 @@ GameObject:
   - component: {fileID: 800608639}
   - component: {fileID: 800608638}
   - component: {fileID: 800608641}
+  - component: {fileID: 800608642}
+  - component: {fileID: 800608643}
   m_Layer: 5
   m_Name: Cambiar Fuente
   m_TagString: Untagged
@@ -576,6 +578,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 800608642}
+        m_TargetAssemblyTypeName: ChangeFontColor, Assembly-CSharp
+        m_MethodName: ChangeColor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 800608643}
+        m_TargetAssemblyTypeName: ChangeBackgroundColor, Assembly-CSharp
+        m_MethodName: ChangeColor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &800608639
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -639,7 +665,48 @@ MonoBehaviour:
   - {fileID: 8635429630237410892}
   - {fileID: 1966399038299380699}
   newFont: {fileID: 12800000, guid: 5b7a19133955d8d4593101275e0d583a, type: 3}
-  newColor: {r: 0.65882355, g: 0.20910957, b: 0.070588246, a: 0}
+--- !u!114 &800608642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 800608636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d329f7efe9488044a5e71621b7fd961, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uiTextsToChange:
+  - {fileID: 0}
+  tmpTextsToChange:
+  - {fileID: 2069803853571998134}
+  - {fileID: 5127708211427681337}
+  - {fileID: 5183010468410667765}
+  - {fileID: 4529523518758802933}
+  - {fileID: 8635429630237410892}
+  - {fileID: 1966399038299380699}
+  - {fileID: 3287918534554263324}
+  - {fileID: 7606282549865830984}
+  - {fileID: 5408269102956080492}
+  - {fileID: 7005663049440374112}
+  - {fileID: 131157936}
+  - {fileID: 2069803853571998134}
+  newColor: {r: 0.9622642, g: 0.4828412, b: 0.06808472, a: 0}
+--- !u!114 &800608643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 800608636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60d3cfb6f6235184d86c3b6eb77e40a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  backgroundImage: {fileID: 744102268}
+  newBackgroundColor: {r: 0.562773, g: 0.31612673, b: 0.6037736, a: 0}
 --- !u!1 &977000528
 GameObject:
   m_ObjectHideFlags: 0
@@ -1698,6 +1765,7 @@ GameObject:
   - component: {fileID: 4938365012392018383}
   - component: {fileID: 6031079701643852455}
   - component: {fileID: 6649441497745155905}
+  - component: {fileID: 6649441497745155906}
   m_Layer: 1
   m_Name: Boton 3
   m_TagString: Untagged
@@ -3097,7 +3165,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6031079701643852455}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6649441497745155906}
+        m_TargetAssemblyTypeName: Cambio, Assembly-CSharp
+        m_MethodName: CambiarEscena
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Escena_3
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &6649441497745155906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2535792830644598472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49f8427ff6ab37b48ac45565bfab525c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6674812934698071136
 GameObject:
   m_ObjectHideFlags: 0
@@ -3175,7 +3267,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Boton 3
+  m_text: Escenario 3
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

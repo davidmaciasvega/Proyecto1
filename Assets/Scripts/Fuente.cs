@@ -36,4 +36,6 @@ public class FontController : MonoBehaviour
 
         Debug.Log("Fuente cambiada en todos los textos.");
     }
+    
 }
+
