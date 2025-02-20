@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 85c7e6b7580e9f940a1df3f588e58a89
+guid: bcbe36f2be97f494c8c8f9642b58d9f9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8084956324899459123
-    second: M8M_0
+      213: 5488370903067918852
+    second: moneda_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: M8M_0
+      name: moneda_0
       rect:
         serializedVersion: 2
-        x: 27
-        y: 9
-        width: 148
-        height: 182
+        x: 51
+        y: 51
+        width: 246
+        height: 281
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dcfe1d5fe077ccf80800000000000000
-      internalID: -8084956324899459123
+      spriteID: 40204f8f14c9a2c40800000000000000
+      internalID: 5488370903067918852
       vertices: []
       indices: 
       edges: []
